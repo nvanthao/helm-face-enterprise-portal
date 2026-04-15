@@ -43,6 +43,12 @@ navigation:
       - title: Checking for Updates
         page: pages/updates/checking.md
 
+  - title: Debug
+    icon: bug
+    items:
+      - title: Template Variables
+        page: pages/debug/template-variables.md
+
   - title: Reference
     icon: book-open
     items:
