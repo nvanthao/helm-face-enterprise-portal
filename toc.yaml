@@ -58,6 +58,22 @@ navigation:
         #   entitlements:
         #     - isHelmInstallEnabled
 
+  - title: Infrastructure
+    icon: cloud
+    items:
+      - title: Overview
+        page: pages/infrastructure/overview.md
+      - title: Cloud A
+        terraform_module: github.com/nvanthao/helm-face-terraform//modules/cloud-a?ref=main
+        visible_when:
+          entitlements:
+            - has_cloud_a
+      - title: Cloud B
+        terraform_module: github.com/nvanthao/helm-face-terraform//modules/cloud-b?ref=main
+        visible_when:
+          entitlements:
+            - has_cloud_b
+
   - title: Support
     icon: life-buoy
     items:
