@@ -24,9 +24,6 @@ navigation:
     items:
       - title: Security
         page: pages/operations/security.md
-        visible_when:
-          permissions:
-            - canViewSecurity
       - title: Linux Bundles
         page: pages/operations/bundles/linux.md
         visible_when:
@@ -70,9 +67,9 @@ navigation:
             - has_cloud_a
       - title: Cloud B
         terraform_module: github.com/nvanthao/helm-face-terraform//modules/cloud-b?ref=main
-        visible_when:
-          entitlements:
-            - has_cloud_b
+        # visible_when:
+        #   entitlements:
+        #     - has_cloud_b
 
   - title: Support
     icon: life-buoy
